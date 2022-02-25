@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "iransans";
+  font-weight: normal;
+  src: url(./iransans.woff);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0 100px;
+}
+/* - - - - - Tv section - - - - - */
+.tv-container {
+  margin-top: 30px;
+  position: relative;
+}
+/* - - Tv text - - */
+.tv-container-text {
+  display: flex;
+  flex-flow: column;
+  text-align: right;
+}
+/* H2 */
+.tv-container-text h2 {
+  color: #000;
+  font-size: 1.9em;
+  font-weight: 700;
+  font-family: "iransans";
+}
+/* p */
+.tv-container-text p {
+  margin-bottom: 25px;
+  margin-top: 15px;
+  color: rgb(58, 58, 58);
+  font-size: 1.2em;
+  font-weight: 300;
+  font-family: "iransans";
+}
+/* button */
+.tv-container-button button {
+  padding: 15px 25px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 200;
+  font-family: "iransans";
+  border-radius: 50px;
+  background: #00c178;
+  box-shadow: 0 7px 20px #00c17860;
+}
+.tv-container-button {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+/* - - Tv container content - - */
+.tv-container-content {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  margin-bottom: 100px;
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+/* Tv image */
+.tv-container-content img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: #959da533 0px 8px 24px;
+}
+/* Play tv button */
+.tv-box-3,
+.tv-box-2,
+.tv-box-1 {
+  position: relative;
+}
+.play-btn {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  border-radius: 20px;
+  background: url(./play.svg);
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-duration: 0.2s;
+  position: absolute;
+  top: 0;
+}
+.play-btn:hover {
+  opacity: 1;
+  background-size: 24%;
+}

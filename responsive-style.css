@@ -1,0 +1,61 @@
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+  body {
+    margin: 0 10px;
+  }
+  /* - - - - - Tv section - - - - - */
+  /* - - Tv text - - */
+  /* H2 */
+  .tv-container-text h2 {
+    font-size: 1.5em;
+  }
+  /* p */
+  .tv-container-text p {
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+  /* Tv container content */
+  .tv-container-content {
+    padding-top: 10px;
+    display: grid;
+    column-gap: 0px;
+    row-gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tv-container-button {
+    text-align: left;
+    position: relative;
+  }
+  .tv-container-button button {
+    margin-bottom: 2rem;
+    padding: 15px 20px;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    margin: 0 50px;
+  }
+  /* - - - - - Tv section - - - - - */
+  /* - - Tv text - - */
+  /* H2 */
+  .tv-container-text h2 {
+    font-size: 1.6em;
+  }
+  /* p */
+  .tv-container-text p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+  }
+  /* Tv container content */
+  .tv-container-content {
+    padding-top: 30px;
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tv-container-button button {
+    padding: 15px 20px;
+  }
+}
